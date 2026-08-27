@@ -1,7 +1,7 @@
 import React from "react";
 import {
   FaArrowRight,
-  FaBuilding,
+  FaBriefcase,
   FaCheckCircle,
   FaGlobeAsia,
   FaPlaneDeparture,
@@ -9,9 +9,9 @@ import {
 } from "react-icons/fa";
 
 const WHATSAPP_URL =
-  "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20Business%20Visa%20Programme%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
+  "https://wa.me/8801977550083?text=আসসালামু%20আলাইকুম,%20আমি%20Internship%20Programme%20সম্পর্কে%20বিস্তারিত%20জানতে%20চাই।";
 
-const BusinessVisaHero: React.FC = () => {
+const InternshipHero: React.FC = () => {
   return (
     <section
       id="home"
@@ -28,7 +28,7 @@ const BusinessVisaHero: React.FC = () => {
 
       <img
         src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2200&q=90"
-        alt="Business meeting"
+        alt="International internship"
         className="
           absolute
           inset-0
@@ -119,7 +119,6 @@ const BusinessVisaHero: React.FC = () => {
           lg:px-8
         "
       >
-
         <div
           className="
             grid
@@ -129,7 +128,6 @@ const BusinessVisaHero: React.FC = () => {
             lg:grid-cols-[1.1fr_0.9fr]
           "
         >
-
           {/* =================================================
               LEFT CONTENT
           ================================================== */}
@@ -157,44 +155,43 @@ const BusinessVisaHero: React.FC = () => {
                 sm:text-sm
               "
             >
-              <FaBuilding className="text-yellow-400" />
+              <FaBriefcase className="text-yellow-400" />
 
-              Business Visa Consultancy
+              International Internship Programme
             </div>
 
             {/* Heading */}
+ 
+<h1
+  className="
+    text-[2.6rem]
+    font-black
+    leading-[1.08]
+    tracking-tight
+    text-white
+    sm:text-5xl
+    md:text-6xl
+    lg:text-[4.5rem]
+  "
+>
+  বিদেশে ইন্টার্নশিপ
 
-            <h1
-              className="
-                text-[2.6rem]
-                font-black
-                leading-[1.08]
-                tracking-tight
-                text-white
-                sm:text-5xl
-                md:text-6xl
-                lg:text-[4.5rem]
-              "
-            >
-              বিদেশে ব্যবসায়িক
-
-              <span
-                className="
-                  mt-1
-                  block
-                  bg-gradient-to-r
-                  from-yellow-300
-                  via-yellow-400
-                  to-orange-400
-                  bg-clip-text
-                  pb-3
-                  text-transparent
-                "
-              >
-                নতুন সুযোগ
-              </span>
-            </h1>
-
+  <span
+    className="
+      mt-1
+      block
+      bg-gradient-to-r
+      from-yellow-300
+      via-yellow-400
+      to-orange-400
+      bg-clip-text
+      pb-3
+      text-transparent
+    "
+  >
+    নতুন সম্ভাবনা
+  </span>
+</h1>
             {/* Description */}
 
             <p
@@ -209,14 +206,15 @@ const BusinessVisaHero: React.FC = () => {
                 lg:text-lg
               "
             >
-              Invitation-এর মাধ্যমে আপনার পছন্দের দেশে
-              Business Visit Programme-এ যাওয়ার সুযোগ।
-              আমাদের মাধ্যমে পুরো process-এর জন্য
-              professional support ও guidance পান।
+              আন্তর্জাতিক প্রতিষ্ঠানে Internship Programme-এর মাধ্যমে
+              বাস্তব কর্ম-অভিজ্ঞতা অর্জনের সুযোগ। আপনার academic
+              profile অনুযায়ী উপযুক্ত country ও programme নির্বাচন থেকে
+              শুরু করে application process পর্যন্ত professional support
+              ও guidance পান।
             </p>
 
             {/* =================================================
-                PACKAGE HIGHLIGHTS
+                PROGRAM HIGHLIGHTS
             ================================================== */}
 
             <div
@@ -229,8 +227,7 @@ const BusinessVisaHero: React.FC = () => {
                 sm:grid-cols-4
               "
             >
-
-              {/* Invitation */}
+              {/* Paid Internship */}
 
               <div
                 className="
@@ -243,7 +240,7 @@ const BusinessVisaHero: React.FC = () => {
                   sm:p-4
                 "
               >
-                <FaBuilding className="text-yellow-400" />
+                <FaBriefcase className="text-yellow-400" />
 
                 <p
                   className="
@@ -253,9 +250,8 @@ const BusinessVisaHero: React.FC = () => {
                     text-white
                   "
                 >
-                  Invitation
+                  Paid Internship
                 </p>
-
               </div>
 
               {/* Accommodation */}
@@ -281,12 +277,11 @@ const BusinessVisaHero: React.FC = () => {
                     text-white
                   "
                 >
-                  Accommodation
+                  International
                 </p>
-
               </div>
 
-              {/* Food */}
+              {/* Experience */}
 
               <div
                 className="
@@ -309,12 +304,11 @@ const BusinessVisaHero: React.FC = () => {
                     text-white
                   "
                 >
-                  Food
+                  Work Experience
                 </p>
-
               </div>
 
-              {/* Air Ticket */}
+              {/* Visa */}
 
               <div
                 className="
@@ -337,18 +331,77 @@ const BusinessVisaHero: React.FC = () => {
                     text-white
                   "
                 >
-                  Air Ticket
+                  Visa Support
                 </p>
-
               </div>
-
             </div>
 
             {/* =================================================
-                3 DAYS PROGRAMME
+                INTERNSHIP PROGRAMME
             ================================================== */}
 
-          
+            <div
+              className="
+                mt-7
+                max-w-2xl
+                rounded-2xl
+                border
+                border-white/10
+                bg-white/[0.06]
+                px-4
+                py-4
+                backdrop-blur-md
+                sm:px-5
+              "
+            >
+              <div className="flex items-center gap-3">
+
+                <div
+                  className="
+                    flex
+                    h-10
+                    w-10
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-xl
+                    bg-yellow-400
+                    text-slate-950
+                  "
+                >
+                  <FaBriefcase size={16} />
+                </div>
+
+                <div>
+
+                  <p
+                    className="
+                      text-[10px]
+                      font-bold
+                      uppercase
+                      tracking-wider
+                      text-slate-400
+                    "
+                  >
+                    Internship Opportunities
+                  </p>
+
+                  <p
+                    className="
+                      mt-1
+                      text-sm
+                      font-bold
+                      text-white
+                      sm:text-base
+                    "
+                  >
+                    Hong Kong • Thailand • Fiji
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
 
             {/* =================================================
                 CTA
@@ -363,11 +416,10 @@ const BusinessVisaHero: React.FC = () => {
                 sm:flex-row
               "
             >
-
               {/* Country Button */}
 
               <a
-                href="#countries"
+                href="#internship"
                 className="
                   group
                   inline-flex
@@ -390,7 +442,7 @@ const BusinessVisaHero: React.FC = () => {
                   sm:text-base
                 "
               >
-                দেশসমূহ দেখুন
+                ইন্টার্নশিপ দেখুন
 
                 <FaArrowRight
                   className="
@@ -436,7 +488,6 @@ const BusinessVisaHero: React.FC = () => {
 
                 বিস্তারিত জানুন
               </a>
-
             </div>
 
             {/* Trust Points */}
@@ -463,7 +514,7 @@ const BusinessVisaHero: React.FC = () => {
               >
                 <FaCheckCircle className="text-green-400" />
 
-                Invitation Support
+                Internship Guidance
               </div>
 
               <div
@@ -493,7 +544,7 @@ const BusinessVisaHero: React.FC = () => {
               >
                 <FaCheckCircle className="text-green-400" />
 
-                Complete Programme Support
+                Application Support
               </div>
 
             </div>
@@ -545,7 +596,7 @@ const BusinessVisaHero: React.FC = () => {
 
                   <img
                     src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=90"
-                    alt="International business meeting"
+                    alt="International internship"
                     className="
                       h-[480px]
                       w-full
@@ -586,7 +637,7 @@ const BusinessVisaHero: React.FC = () => {
                         text-yellow-400
                       "
                     >
-                      Business Visit
+                      International Internship
                     </p>
 
                     <h3
@@ -597,7 +648,7 @@ const BusinessVisaHero: React.FC = () => {
                         text-white
                       "
                     >
-                      Explore Business Opportunities
+                      Build Your Global Career
                     </h3>
 
                     <p
@@ -608,8 +659,8 @@ const BusinessVisaHero: React.FC = () => {
                         text-slate-300
                       "
                     >
-                      Invitation থেকে Business Visit পর্যন্ত
-                      complete programme support।
+                      Internship opportunity থেকে application
+                      ও visa process পর্যন্ত complete support।
                     </p>
 
                   </div>
@@ -651,17 +702,17 @@ const BusinessVisaHero: React.FC = () => {
                       text-slate-950
                     "
                   >
-                    <FaPlaneDeparture />
+                    <FaBriefcase />
                   </div>
 
                   <div>
 
                     <p className="text-xs text-slate-400">
-                      Complete Package
+                      Internship
                     </p>
 
                     <p className="mt-0.5 font-bold text-white">
-                      Air Ticket • Stay • Food
+                      Paid • International • Experience
                     </p>
 
                   </div>
@@ -671,7 +722,7 @@ const BusinessVisaHero: React.FC = () => {
               </div>
 
               {/* =================================================
-                  FLOATING DAYS CARD
+                  FLOATING DURATION CARD
               ================================================== */}
 
               <div
@@ -704,7 +755,7 @@ const BusinessVisaHero: React.FC = () => {
                       text-white
                     "
                   >
-                    <FaBuilding />
+                    <FaGlobeAsia />
                   </div>
 
                   <div>
@@ -717,7 +768,7 @@ const BusinessVisaHero: React.FC = () => {
                         text-slate-400
                       "
                     >
-                      Programme
+                      Destinations
                     </p>
 
                     <p
@@ -727,7 +778,7 @@ const BusinessVisaHero: React.FC = () => {
                         text-white
                       "
                     >
-                      3 Days Business Visit
+                      Hong Kong • Thailand • Fiji
                     </p>
 
                   </div>
@@ -791,17 +842,17 @@ const BusinessVisaHero: React.FC = () => {
                 text-slate-950
               "
             >
-              <FaBuilding size={15} />
+              <FaBriefcase size={15} />
             </div>
 
             <div>
 
               <p className="text-[10px] text-slate-400">
-                Business Programme
+                Internship Programme
               </p>
 
               <p className="text-xs font-bold text-white">
-                3 Days • All Included
+                Paid • International Opportunities
               </p>
 
             </div>
@@ -836,4 +887,4 @@ const BusinessVisaHero: React.FC = () => {
   );
 };
 
-export default BusinessVisaHero;
+export default InternshipHero;

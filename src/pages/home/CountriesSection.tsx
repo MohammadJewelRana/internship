@@ -72,7 +72,7 @@ const internshipCountries = [
 const InternshipCountriesSection = () => {
   return (
     <section
-      id="internship"
+      id="countries"
       className="
         bg-slate-50
         px-4

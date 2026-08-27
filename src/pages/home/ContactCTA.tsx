@@ -5,7 +5,8 @@ import {
   FaEnvelope,
   FaPhoneAlt,
   FaWhatsapp,
-  FaGlobeEurope,
+  FaBriefcase,
+  FaGlobeAsia,
 } from "react-icons/fa";
 
 const FACEBOOK_URL =
@@ -26,10 +27,10 @@ const contacts = [
   },
 ];
 
-const BusinessContactSection: React.FC = () => {
+const InternshipContactSection: React.FC = () => {
   return (
     <section
-      id="contact"
+      id="internship-contact"
       className="
         relative
         overflow-hidden
@@ -53,7 +54,7 @@ const BusinessContactSection: React.FC = () => {
           h-96
           w-96
           rounded-full
-          bg-yellow-400/[0.06]
+          bg-indigo-500/[0.07]
           blur-3xl
         "
       />
@@ -68,6 +69,22 @@ const BusinessContactSection: React.FC = () => {
           w-96
           rounded-full
           bg-emerald-400/[0.05]
+          blur-3xl
+        "
+      />
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-1/2
+          h-72
+          w-72
+          -translate-x-1/2
+          -translate-y-1/2
+          rounded-full
+          bg-yellow-400/[0.025]
           blur-3xl
         "
       />
@@ -99,7 +116,7 @@ const BusinessContactSection: React.FC = () => {
               shadow-yellow-400/5
             "
           >
-            <FaGlobeEurope size={27} />
+            <FaBriefcase size={27} />
           </div>
 
           {/* Eyebrow */}
@@ -115,7 +132,7 @@ const BusinessContactSection: React.FC = () => {
               sm:text-xs
             "
           >
-            More Business Visa Destinations
+            More Internship Opportunities
           </p>
 
           {/* Heading */}
@@ -134,6 +151,7 @@ const BusinessContactSection: React.FC = () => {
             "
           >
             আমরা আরও অনেক
+
             <span
               className="
                 block
@@ -163,11 +181,92 @@ const BusinessContactSection: React.FC = () => {
               sm:leading-8
             "
           >
-            উপরে উল্লেখিত দেশগুলোর পাশাপাশি আমরা আরও বিভিন্ন
-            দেশের Business Visa Programme নিয়ে কাজ করি।
-            আপনার পছন্দের দেশ সম্পর্কে বিস্তারিত জানতে
-            আমাদের সাথে যোগাযোগ করুন।
+            Hong Kong, Thailand ও Fiji-এর পাশাপাশি আমরা আরও
+            বিভিন্ন দেশের Internship Programme নিয়ে কাজ করি।
+            আপনার পছন্দের দেশ বা Internship Programme সম্পর্কে
+            বিস্তারিত জানতে আমাদের সাথে যোগাযোগ করুন।
           </p>
+
+        </div>
+
+        {/* =====================================================
+            PROGRAM HIGHLIGHTS
+        ====================================================== */}
+
+        <div
+          className="
+            mx-auto
+            mt-10
+            flex
+            max-w-3xl
+            flex-wrap
+            justify-center
+            gap-3
+          "
+        >
+
+          <div
+            className="
+              flex
+              items-center
+              gap-2
+              rounded-full
+              border
+              border-white/10
+              bg-white/[0.04]
+              px-4
+              py-2.5
+              text-xs
+              font-semibold
+              text-slate-300
+            "
+          >
+            <FaBriefcase className="text-yellow-400" />
+
+            Paid Internship
+          </div>
+
+          <div
+            className="
+              flex
+              items-center
+              gap-2
+              rounded-full
+              border
+              border-white/10
+              bg-white/[0.04]
+              px-4
+              py-2.5
+              text-xs
+              font-semibold
+              text-slate-300
+            "
+          >
+            <FaGlobeAsia className="text-emerald-400" />
+
+            International Opportunities
+          </div>
+
+          <div
+            className="
+              flex
+              items-center
+              gap-2
+              rounded-full
+              border
+              border-white/10
+              bg-white/[0.04]
+              px-4
+              py-2.5
+              text-xs
+              font-semibold
+              text-slate-300
+            "
+          >
+            <FaBriefcase className="text-blue-400" />
+
+            Career Experience
+          </div>
 
         </div>
 
@@ -187,11 +286,13 @@ const BusinessContactSection: React.FC = () => {
           "
         >
 
-          {/* WhatsApp */}
+          {/* =================================================
+              WHATSAPP
+          ================================================== */}
 
           <a
             href={`https://wa.me/8801977005583?text=${encodeURIComponent(
-              "আসসালামু আলাইকুম, আমি Business Visa Programme সম্পর্কে বিস্তারিত জানতে চাই।"
+              "আসসালামু আলাইকুম, আমি Internship Programme সম্পর্কে বিস্তারিত জানতে চাই।"
             )}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -265,7 +366,9 @@ const BusinessContactSection: React.FC = () => {
 
           </a>
 
-          {/* Facebook */}
+          {/* =================================================
+              FACEBOOK
+          ================================================== */}
 
           <a
             href={FACEBOOK_URL}
@@ -341,7 +444,9 @@ const BusinessContactSection: React.FC = () => {
 
           </a>
 
-          {/* Email */}
+          {/* =================================================
+              EMAIL
+          ================================================== */}
 
           <a
             href="mailto:info@avelonbd.com"
@@ -464,12 +569,14 @@ const BusinessContactSection: React.FC = () => {
                 hover:text-white
               "
             >
+
               <FaPhoneAlt
                 size={10}
                 className="text-yellow-400"
               />
 
               {contact.number}
+
             </a>
           ))}
 
@@ -489,8 +596,14 @@ const BusinessContactSection: React.FC = () => {
           "
         >
 
-          <p className="text-sm font-semibold text-slate-400">
-            আপনার পছন্দের দেশ সম্পর্কে জানতে চান?
+          <p
+            className="
+              text-sm
+              font-semibold
+              text-slate-400
+            "
+          >
+            আপনার পছন্দের Internship Programme সম্পর্কে জানতে চান?
           </p>
 
           <p
@@ -502,9 +615,9 @@ const BusinessContactSection: React.FC = () => {
               sm:text-sm
             "
           >
-            আমাদের সাথে যোগাযোগ করুন এবং আপনার জন্য
-            available Business Visa Programme সম্পর্কে
-            বিস্তারিত তথ্য জেনে নিন।
+            আমাদের সাথে যোগাযোগ করুন এবং আপনার profile অনুযায়ী
+            available Internship Programme সম্পর্কে বিস্তারিত
+            তথ্য জেনে নিন।
           </p>
 
         </div>
@@ -514,4 +627,4 @@ const BusinessContactSection: React.FC = () => {
   );
 };
 
-export default BusinessContactSection;
+export default InternshipContactSection;
